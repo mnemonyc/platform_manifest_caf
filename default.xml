@@ -51,8 +51,8 @@
   <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="github" />
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="github" />
   <project name="platform_external_zlib" path="external/zlib" remote="github" />
-  <project name="platform_frameworks_av" path="frameworks/av" remote="github" />
-  <project name="platform_frameworks_base" path="frameworks/base" remote="github" />
+  <project name="platform_frameworks_av" path="frameworks/av" remote="github" revision="test" />
+  <project name="platform_frameworks_base" path="frameworks/base" remote="github" revision="test" />
   <project name="platform_frameworks_native" path="frameworks/native" remote="github" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="github" />
