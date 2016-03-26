@@ -69,7 +69,7 @@
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="github" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" />
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" />
-  <project name="platform_system_core" path="system/core" remote="github" />
+  <project name="platform_system_core" path="system/core" remote="github" revision="test" />
   <project name="platform_system_extras" path="system/extras" remote="github" />
   <project name="platform_system_media" path="system/media" remote="github" />
   <project name="platform_system_vold" path="system/vold" remote="github" /> 
