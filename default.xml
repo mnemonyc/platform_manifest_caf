@@ -11,6 +11,10 @@
   <remote  name="cm"
            fetch="https://github.com"
            revision="refs/heads/cm-13.0" />
+
+  <remote  name="hazy"
+           fetch="https://github.com"
+           revision="refs/heads/hazy-mallow-legacy" />
 	
   <remote  name="github"
            fetch="https://github.com/AOSP-CAF"
