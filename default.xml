@@ -6,7 +6,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-6.0.1_r3" />
+           revision="refs/tags/android-6.0.1_r22" />
 
   <remote  name="cm"
            fetch="https://github.com"
@@ -20,11 +20,19 @@
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/mm6.0" />
 		   
-<!-- BEGIN AOSP-CAF -->
-  <project name="platform_manifest" path="manifest" remote="github" />
-  <project name="platform_build" path="build" remote="github" >
-  <copyfile src="core/root.mk" dest="Makefile" />
+<!-- BEGIN HAZY-CAF -->
+  <project name="mnemonyc/platform_manifest_caf" path="manifest" remote="hazy" />
+  <project name="mnemonyc/platform_build_caf" path="build" remote="hazy" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project name="mnemonyc/platform_frameworks_base_caf" path="frameworks/base" remote="hazy" />
+  <project name="mnemonyc/platform_packages_apps_settings_caf" path="packages/apps/Settings" remote="hazy" />
+  <project name="mnemonyc/platform_packages_apps_browser_caf" path="packages/apps/Browser" remote="hazy" />
+  <project name="mnemonyc/platform_packages_apps_dialer_caf" path="packages/apps/Dialer" remote="hazy" />
+  <project groups="pdk" name="mnemonyc/platform_external_chromium-webview_caf" path="external/chromium-webview" remote="hazy" />
+<!-- FINISH HAZY-CAF -->
+
+<!-- BEGIN AOSP-CAF -->
   <project name="device_qcom_common" path="device/qcom/common" remote="github" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" />
   <project name="platform_art" path="art" remote="github" />
@@ -56,7 +64,6 @@
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="github" />
   <project name="platform_external_zlib" path="external/zlib" remote="github" />
   <project name="platform_frameworks_av" path="frameworks/av" remote="github" />
-  <project name="platform_frameworks_base" path="frameworks/base" remote="github" />
   <project name="platform_frameworks_native" path="frameworks/native" remote="github" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="github" />
@@ -69,7 +76,6 @@
   <project name="platform_hardware_ril" path="hardware/ril" remote="github" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="mm6.0-caf" remote="github" />
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="github" />
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="github" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" />
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="github" />
@@ -130,7 +136,6 @@
   <project groups="pdk-cw-fs" name="platform/external/ceres-solver" path="external/ceres-solver"/>
   <project name="platform/external/chromium-libpac" path="external/chromium-libpac"/>
   <project groups="pdk" name="platform/external/chromium-trace" path="external/chromium-trace"/>
-  <project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang"/>
   <project name="platform/external/cmockery" path="external/cmockery"/>
   <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt"/>
@@ -357,7 +362,6 @@
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper"/>
   <project groups="pdk" name="platform/ndk" path="ndk"/>
   <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
-  <project name="platform/packages/apps/Browser" path="packages/apps/Browser"/>
   <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
   <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
   <project name="platform/packages/apps/Camera" path="packages/apps/Camera"/>
@@ -368,7 +372,6 @@
   <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts"/>
   <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon"/>
   <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock"/>
-  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer"/>
   <project name="platform/packages/apps/Email" path="packages/apps/Email"/>
   <project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator"/>
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange"/>
