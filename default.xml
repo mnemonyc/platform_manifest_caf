@@ -33,6 +33,7 @@
   <project name="mnemonyc/platform_packages_apps_settings_caf" path="packages/apps/Settings" remote="hazy" />
   <project name="mnemonyc/platform_packages_apps_browser_caf" path="packages/apps/Browser" remote="hazy" />
   <project name="mnemonyc/platform_packages_apps_dialer_caf" path="packages/apps/Dialer" remote="hazy" />
+  <project name="mnemonyc/proprietary_vendor_hazy" path="vendor/hazy" remote="hazy" />
   <project groups="pdk" name="HazyTeam/platform_external_chromium-webview" path="external/chromium-webview" remote="hazyOR" />
 <!-- FINISH HAZY-CAF -->
 
