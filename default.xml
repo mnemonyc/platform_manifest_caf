@@ -16,6 +16,10 @@
            fetch="https://github.com"
            revision="refs/heads/hazy-mallow-legacy" />
 	
+  <remote  name="hazyOR"
+           fetch="https://github.com"
+           revision="refs/heads/hazy-mallow" />
+	
   <remote  name="github"
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/mm6.0" />
@@ -29,7 +33,7 @@
   <project name="mnemonyc/platform_packages_apps_settings_caf" path="packages/apps/Settings" remote="hazy" />
   <project name="mnemonyc/platform_packages_apps_browser_caf" path="packages/apps/Browser" remote="hazy" />
   <project name="mnemonyc/platform_packages_apps_dialer_caf" path="packages/apps/Dialer" remote="hazy" />
-  <project groups="pdk" name="mnemonyc/platform_external_chromium-webview_caf" path="external/chromium-webview" remote="hazy" />
+  <project groups="pdk" name="mnemonyc/platform_external_chromium-webview_caf" path="external/chromium-webview" remote="hazyOR" />
 <!-- FINISH HAZY-CAF -->
 
 <!-- BEGIN AOSP-CAF -->
